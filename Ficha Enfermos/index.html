@@ -8,22 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-sm">
+  <div class="cabeca">
+    <h1 class="titulo">Enfermos</h1>
+    <img src="Comunismo.svg" alt="">
+  </div>
+
+    <div class="container-sm" style="margin-bottom: 30px;">
   <div class="row">
-    <div class="col bordadiv">
-      <h1 class="sec">Informações gerais</h1>
+    <div class="col-md-auto bordadiv diminuir">
+      <h1 class="sec">Informações <br>gerais</h1>
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label corpgr">Nome</label>
-            <input type="text" class="form-control corpo sobrepor" id="exampleFormControlInput1">
+            <label class="form-label corpgr">Nome</label>
+            <input type="text" class="form-control corpo sobrepor">
         </div>
         <br>
             <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label corpgr">Origem</label>
-            <input type="text" class="form-control corpo sobrepor" id="exampleFormControlInput1">
+            <label class="form-label corpgr">Origem</label>
+            <input type="text" class="form-control corpo sobrepor">
         </div>
         <br>
         <div class="mb-3">
-             <label for="exampleFormControlInput1" class="form-label corpgr">Classe</label>
+             <label class="form-label corpgr">Classe</label>
             <select class="form-select corpo sobrepor" aria-label="Default select example">
             <option value="1">Artesao</option>
             <option value="2">Sapiente</option>
@@ -33,50 +38,296 @@
             <option value="6">Celestial</option>
             </select>
             <select class="form-select corpo sobrepor" aria-label="Default select example">
+            <option value="7">-</option>
             <option value="1">Artesao</option>
             <option value="2">Sapiente</option>
             <option value="3">Bestial</option>
             <option value="4">Asclepio</option>
             <option value="5">Infames</option>
             <option value="6">Celestial</option>
-            <option value="7">-</option>
             </select>
             </div>
         <br>
             <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label corpgr">Título</label>
-            <input type="text   " class="form-control corpo sobrepor" id="exampleFormControlInput1">
+            <label class="form-label corpgr">Título</label>
+            <input type="text   " class="form-control corpo sobrepor">
         </div>
     </div>
-    <div class="col bordadiv">
-      <h1 class="sec">Atributos do enfermo</h1>
+    <div class="col-md-auto bordadiv" >
+      <h1 class="sec">Atributos <br>do enfermo</h1>
         <div class="me-3">
-            <label for="exampleFormControlInput1" class="form-label corpgrnum">FOR</label>
-            <input type="number" min="1" max="6" class="form-control corponum sobrepor" id="exampleFormControlInput1">
-            <label for="exampleFormControlInput1" class="form-label corpgrnum">CON</label>
-            <input type="number" min="1" max="6" class="form-control corponum sobrepor" id="exampleFormControlInput1">
-            <label for="exampleFormControlInput1" class="form-label corpgrnum">DES</label>
-            <input type="number" min="1" max="6" class="form-control corponum sobrepor" id="exampleFormControlInput1">
+            <label class="form-label corpgrnum">FOR</label>
+            <input type="number" min="1" max="6" value="1" class="form-control corponum sobrepor">
+            <label class="form-label corpgrnum">CON</label>
+            <input type="number" min="1" max="6" value="1" class="form-control corponum sobrepor">
+            <label class="form-label corpgrnum">DES</label>
+            <input type="number" min="1" max="6" value="1" class="form-control corponum sobrepor">
         </div>
         <br><br>
-        <div class="me-3">
-            <label for="exampleFormControlInput1" class="form-label corpgrnum">INT</label>
-            <input type="number" min="1" max="6" class="form-control corponum sobrepor" id="exampleFormControlInput1">
-            <label for="exampleFormControlInput1" class="form-label corpgrnum">SAB</label>
-            <input type="number" min="1" max="6" class="form-control corponum sobrepor" id="exampleFormControlInput1">
-            <label for="exampleFormControlInput1" class="form-label corpgrnum">CAR</label>
-            <input type="number" min="1" max="6" class="form-control corponum sobrepor" id="exampleFormControlInput1">
+        <div class="me-1" style="margin-bottom: 40%;">
+            <label class="form-label corpgrnum">INT</label>
+            <input type="number" min="1" max="6" value="1" class="form-control corponum sobrepor">
+            <label class="form-label corpgrnum">SAB</label>
+            <input type="number" min="1" max="6" value="1" class="form-control corponum sobrepor">
+            <label class="form-label corpgrnum">CAR</label>
+            <input type="number" min="1" max="6" value="1" class="form-control corponum sobrepor">
         </div>
+
+
+        <div class="row">
+            <div class="col-6">
+              <label class="form-label corpgr" style="margin-top: 0px;"><b>VT</b></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+
+
+
     </div>
     <div class="col bordadiv">
-      <h1 class="sec">Nível</h1>
+      <div class="secNvl"> 
+        <h1 class="sec">Nível</h1>
+        <label class="form-label nivel"><input type="number" min="1" max="6" value="1" class="form-control "></label>
+      </div>
       <div class="me-3">
-            <label for="exampleFormControlInput1" class="form-label corpgrnum">FOR</label>
-            <input type="number" min="1" max="6" class="form-control corponum sobrepor" id="exampleFormControlInput1">
-            <label for="exampleFormControlInput1" class="form-label corpgrnum">CON</label>
-            <input type="number" min="1" max="6" class="form-control corponum sobrepor" id="exampleFormControlInput1">
-            <label for="exampleFormControlInput1" class="form-label corpgrnum">DES</label>
-            <input type="number" min="1" max="6" class="form-control corponum sobrepor" id="exampleFormControlInput1">    
+        <div class="container">
+          <div class="row cinza">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Brigar</b><i> [FOR]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Armas B.</b><i> [FOR]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row cinza">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Resistência</b><i> [CON]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Recuperação</b><i> [CON]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row cinza">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Acrobacia</b><i> [DES]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Furtividade</b><i> [DES]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row cinza">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Pontaria</b><i> [DES]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Reflexos</b><i> [DES]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row cinza">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Conhecimento</b><i> [INT]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Estratégia</b><i> [INT]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row cinza">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Investigação</b><i> [INT]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Medicina</b><i> [INT]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row cinza">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Percepção</b><i> [INT]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Intuição</b><i> [SAB]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row cinza">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Vontade</b><i> [SAB]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Sobrevivência</b><i> [SAB]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row cinza">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Enganação</b><i> [CAR]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Intimidação</b><i> [CAR]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row cinza">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Persuasão</b><i> [CAR]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Sedução</b><i> [CAR]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+          <div class="row cinza">
+            <div class="col-6">
+              <label class="form-label pericias"><b>Diplomacia</b><i> [CAR]</i></label>
+            </div>
+            <div class="col-3">
+              <label class="form-labelP "><input type="number" min="0" value="00" class="form-controlP"></label>
+            </div>
+            <div class="col-2">
+              <label class="form-labelP "> <input type="number" min="0" value="0" class="form-controlP"></label>
+            </div>
+          </div>
+        </div>  
     </div>
   </div>
 </div>
