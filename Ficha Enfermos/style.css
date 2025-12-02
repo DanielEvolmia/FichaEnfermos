@@ -194,3 +194,109 @@ font-family: 'Times New Roman', Times, serif;
 .diminuir .form-control{
     width: 400px;
 }
+
+
+.form-labelA{
+padding-top: 2px;
+width: 20px;
+font-family: "Squartiqa4F";
+font-size: 2rem;
+
+}
+
+.form-controlA{
+    height: 80px;
+    background-color: rgba(0, 0, 0, 1);
+    width: 80px;
+    color: white;
+    border: none;
+}
+
+.vt{
+    background-color: #b7053e;
+    border-radius: 5px;
+}
+
+.sn{
+    background-color: #93076d;
+    border-radius: 5px;
+}
+
+.es{
+    background-color: #4b0793;
+    border-radius: 5px;
+}
+.maxmin{
+    font-family: "Squartiqa4F";
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* Container principal */
+        .rating-container {
+            display: flex;
+            /* Inverte a ordem visual para que o seletor CSS funcione da direita para a esquerda */
+            flex-direction: row-reverse; 
+            justify-content: flex-end;
+            gap: 5px; /* Espaço entre as bolinhas */
+        }
+
+        /* Esconde os radio buttons originais */
+        .rating-container input[type="radio"] {
+            display: none;
+        }
+
+        /* Estilo base da bolinha (vazia) */
+        .rating-container label {
+            width: 25px;
+            height: 25px;
+            border: 3px solid black;
+            border-radius: 50%; /* Faz virar um círculo */
+            background-color: white; /* Meio branco */
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        /* LÓGICA MÁGICA:
+           Quando um input é "checked" (clicado), selecionamos:
+           1. O próprio label associado (+ label)
+           2. Todos os labels que vêm depois dele no HTML (~ label)
+           
+           Como usamos row-reverse, os que vêm "depois" no HTML são os visuais "anteriores".
+        */
+        .rating-container input[type="radio"]:checked + label,
+        .rating-container input[type="radio"]:checked ~ label {
+            background-color: black;
+        }
+
+        /* (Opcional) Efeito de hover para pré-visualizar a seleção */
+        .rating-container label:hover,
+        .rating-container label:hover ~ label {
+            background-color: #bababa; /* Um cinza para indicar hover */
+        }
+        .rating-wrapper{
+            padding-bottom: 5px;
+        }
+        .rating-container h1{
+            font-family: "Aspal";
+             font-size: 1.5rem;
+             font-weight:700;
+             color: black;
+        }
+        .painel-controle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            display: flex;
+            gap: 10px;
+        }
+        
+        /* Esconde os botões na hora de imprimir (CTRL+P) */
+        @media print {
+            .painel-controle { display: none !important; }
+        }
